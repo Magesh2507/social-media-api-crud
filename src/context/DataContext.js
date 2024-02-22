@@ -19,7 +19,7 @@ export const DataProvider = ({children})=>{
     const [editBody, setEditBody] = useState("")
     const navigate = useNavigate()
     const {width} = useWindowSize()
-    const {data, fetchError, isLoading} = useAxiosFetch("http://react-json-server-socialmedia.onrender.com")
+    const {data, fetchError, isLoading} = useAxiosFetch("https://react-json-server-socialmedia.onrender.com/posts")
   
      useEffect(() => {
       setPosts(data)
